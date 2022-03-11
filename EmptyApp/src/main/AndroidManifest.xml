@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 所有元素必须在这里注册，Studio能够自动注册 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.emptyapp">
+    <!-- 这是应用程序的一些属性设置 -->
+    <!-- 第三项是引用了string.xml的资源 -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication2">
+        <!-- MainActivity在java文件夹 -->
+        <activity
+            android:name=".HelloDroidActivity"
+            android:exported="true">
+            <!-- 配置主活动 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
